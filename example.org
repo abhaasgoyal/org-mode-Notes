@@ -1,0 +1,83 @@
+# # Default title is example ( it's a metadata kinda thing)
+#+TITLE: A Gentle Introduction to Org-Mode
+
+# # Don't show table of contents and stuff
+#+OPTIONS: toc:nil
+#+DESCRIPTION: Testing the features from
+
+# Top level headlines are in numbers most of the rest is in bullet
+# Outliers ( they are basically links to open up stuff)
+* Top Level Headline
+** Second Level
+*** Third Level
+    some textile
+    *Bold*, /italic/, =verbatim= , +strikethrough+
+- bulleted
+- list
+- items
+
+# C-c C-l to insert a link
+[[http://orgmode.org/][Org-mode]]
+# If you want to do this for other files then it's easier to do so by
+# C-c l to insert a link there and linking this to ther other file
+
+# ***** M - <Enter> to add a new point directly without anything
+
+
+* Tables
+  Tab is for switching between the tables
+  |- Tab is for completing the line
+  | fslkf | sdkldjfs | at the start
+**** Example
+| Some | Data           |
+|------+----------------|
+|   12 | buckle my shoe |
+|   34 | Shut the door  |
+
+* Export to other formats
+  C-c C-e
+
+# < s <tab> for writing source code
+# for a particular language C-c '
+#+BEGIN_SRC ruby
+  def fact(n)
+    if n == 0
+      1
+    else
+      n * fact(n-1)
+    end
+  end
+
+  fact(5)
+#+END_SRC
+# For getting the results of the code snippet C-c C-c
+#+RESULTS:
+: 120
+
+# C-c C-c inside the code block will automatically have a results block
+* LaTeX integration
+  - Characters: \alpha \rightarrow \beta
+  - $0(n \log n)$
+
+  \begin{align*}
+     3 * 2 + &= 6 + 1 \\
+             &= 7
+  \end{align*}
+
+# Look about beaver pdf it's so osum
+
+* Literate programming
+
+# Evaluate all files in the source block not only the snippet
+
+* Todo stuff
+# C-c C-t on any line below will help us decide the state of the task
+# M-<Shift>-Enter gives TODO again
+** TODO explain todo lists
+** DONE cycle through states
+   CLOSED: [2020-05-26 Tue 22:38]
+   :LOGBOOK:
+   - State "DONE"       from "TODO"       [2020-05-29 Fri 22:38]
+   :END:
+# <Shift> - left/right can change dates and shiz
+# C-c C-d brings up calendar

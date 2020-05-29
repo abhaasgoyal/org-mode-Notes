@@ -23,7 +23,6 @@
 
 # ***** M - <Enter> to add a new point directly without anything
 
-
 * Tables
   Tab is for switching between the tables
   |- Tab is for completing the line
@@ -53,7 +52,6 @@
 # For getting the results of the code snippet C-c C-c
 #+RESULTS:
 : 120
-
 # C-c C-c inside the code block will automatically have a results block
 * LaTeX integration
   - Characters: \alpha \rightarrow \beta
@@ -71,13 +69,28 @@
 # Evaluate all files in the source block not only the snippet
 
 * Todo stuff
-# C-c C-t on any line below will help us decide the state of the task
+# C-c C-t on any line below will help us decide the state of the task ( Either it has been completed, waiting, etc)
 # M-<Shift>-Enter gives TODO again
-** TODO explain todo lists
-** DONE cycle through states
-   CLOSED: [2020-05-26 Tue 22:38]
-   :LOGBOOK:
-   - State "DONE"       from "TODO"       [2020-05-29 Fri 22:38]
-   :END:
+# C-c a brings up the agenda options
+# C-c C-x C-d to archive the stuff that has been completed
 # <Shift> - left/right can change dates and shiz
 # C-c C-d brings up calendar
+** TODO explain todo lists
+   DEADLINE: <2020-06-05 Fri>
+*** DONE cycle through states
+   CLOSED: [2020-05-29 Fri 22:51]
+   :LOGBOOK:
+   - State "DONE"       from "TODO"       [2020-05-29 Fri 22:51]
+   - State "TODO"       from "DONE"       [2020-05-29 Fri 22:50]
+   - State "DONE"       from "TODO"       [2020-05-29 Fri 22:48]
+   :END:
+
+# Org capture templates
+# abook - UNIX program for contacts
+* Some Miscellaneous Facts
+  org2blog can be used to blog to wordpress
+  # =org2blog=
+  org-publish can help us with a website to launch
+  # =org-publish=
+  ox-twbs for better TOC
+  # =ox-twbs=

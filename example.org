@@ -25,9 +25,9 @@
 
 * Tables
   Tab is for switching between the tables
-  |- Tab is for completing the line
-  | fslkf | sdkldjfs | at the start
-**** Example
+  # |- Tab is for completing the line
+  # | fslkf  | sdkldjfs | at the start
+** Example
 | Some | Data           |
 |------+----------------|
 |   12 | buckle my shoe |

@@ -1,0 +1,115 @@
+% Created 2020-05-29 Fri 23:30
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Abhaas Goyal}
+\date{\today}
+\title{A Gentle Introduction to Org-Mode}
+\hypersetup{
+ pdfauthor={Abhaas Goyal},
+ pdftitle={A Gentle Introduction to Org-Mode},
+ pdfkeywords={},
+ pdfsubject={Testing the features from},
+ pdfcreator={Emacs 26.3 (Org mode 9.1.9)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\section{Top Level Headline}
+\label{sec:org4b64a0e}
+\subsection{Second Level}
+\label{sec:org03c58b3}
+\subsubsection{Third Level}
+\label{sec:orgeb61988}
+some textile
+\textbf{Bold}, \emph{italic}, \texttt{verbatim} , \sout{strikethrough}
+\begin{itemize}
+\item bulleted
+\item list
+\item items
+\end{itemize}
+
+\href{http://orgmode.org/}{Org-mode}
+
+\section{Tables}
+\label{sec:orgdcb7650}
+Tab is for switching between the tables
+\begin{center}
+\begin{tabular}{lll}
+\hline
+fslkf & sdkldjfs & at the start\\
+\end{tabular}
+\end{center}
+\begin{enumerate}
+\item Example
+\label{sec:org9481d18}
+\begin{center}
+\begin{tabular}{rl}
+Some & Data\\
+\hline
+12 & buckle my shoe\\
+34 & Shut the door\\
+\end{tabular}
+\end{center}
+\end{enumerate}
+
+\section{Export to other formats}
+\label{sec:org9d2f8aa}
+C-c C-e
+
+\begin{verbatim}
+def fact(n)
+  if n == 0
+    1
+  else
+    n * fact(n-1)
+  end
+end
+
+fact(5)
+\end{verbatim}
+
+\begin{verbatim}
+120
+\end{verbatim}
+\section{\LaTeX{} integration}
+\label{sec:org97d8ab7}
+\begin{itemize}
+\item Characters: \(\alpha\) \(\rightarrow\) \(\beta\)
+\item \(0(n \log n)\)
+\end{itemize}
+
+\begin{align*}
+   3 * 2 + &= 6 + 1 \\
+           &= 7
+\end{align*}
+
+\section{Literate programming}
+\label{sec:org6d38905}
+
+\section{Todo stuff}
+\label{sec:org0c56449}
+\subsection{{\bfseries\sffamily TODO} explain todo lists}
+\label{sec:orga955a5d}
+\subsubsection{{\bfseries\sffamily DONE} cycle through states}
+\label{sec:orgb839ae2}
+\section{Some Miscellaneous Facts}
+\label{sec:org330c812}
+org2blog can be used to blog to wordpress
+
+org-publish can help us with a website to launch
+
+ox-twbs for better TOC
+\end{document}

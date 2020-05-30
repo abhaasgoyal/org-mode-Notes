@@ -1,0 +1,15 @@
+#+TITLE: Org Mode Basic Notes
+#+OPTIONS: toc:nil
+
+* Setup Used
+  - Emacs
+
+    [[https://www.gnu.org/software/emacs/][Install]]
+  - org-mode
+
+    [[https://orgmode.org/][Install]]
+  - latex libraries used:
+
+    ~texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-fonts-recommended~
+
+    Install with *sudo-apt*

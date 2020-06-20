@@ -76,14 +76,16 @@
 # <Shift> - left/right can change dates and shiz
 # C-c C-d brings up calendar
 ** TODO explain todo lists
-   DEADLINE: <2020-06-05 Fri>
-*** DONE cycle through states
-   CLOSED: [2020-05-29 Fri 22:51]
+   DEADLINE: <2020-06-17 Wed>
+** DONE cycle through states
+   CLOSED: [2020-06-16 Tue 22:51]
    :LOGBOOK:
    - State "DONE"       from "TODO"       [2020-05-29 Fri 22:51]
    - State "TODO"       from "DONE"       [2020-05-29 Fri 22:50]
    - State "DONE"       from "TODO"       [2020-05-29 Fri 22:48]
    :END:
+** PROJECT Halo
+
 
 # Org capture templates
 # abook - UNIX program for contacts
@@ -152,3 +154,53 @@
                                                                 ...+.
                                                                  ..
   #+end_src
+** Whenever you are starting into org ref
+   Do org-ref-helm-insert-cite-link to initialize org-ref keybindings \\
+   Idk the solution to that but C-c ] should work afterwards \\
+   It has got to do with Steve Purcell config I think
+* Artist Mode
+  # C-c C-a is the shortcut
+  # Middle clicking inside the block gives us options
+  # But maybe sometimes using keybindings would be better I guess
+  [[https://www.youtube.com/watch?v=cIuX87Xo8Fc][Artist Mode Tutorial]]
+  #+BEGIN_SRC artist
+
+                                            +-----------------------+
+                                            |    Title of a topic   |
+                                            +----------+------------+
+      +--------------------------+                     |
+      | Thing                    |                     +----------------|
+      +--------------------------+                                      v
+      | + Stuff                  |                          +-----------------------+
+      |                          |                          | Right click to select |
+      +--------------------------+                          | and drag it around to |
+      | + Properties             |                          | erase uk              |
+      |                          +--------------------------+                       |
+      +--------------------------+                          |Shift ., changes endsto|        - . . ..
+                                                            |Its counterparts       |         -. -m..
+                                                            +-----------------------+        m ++.m-. .
+                                                        .                 .   .. ....        -  ##m%-.-
+                                                     .m .++ . m* .*++-#### --+-+. +m+#...- -. +.m-%m#+.-
+    .            +---------------------+          . m.  #mm..-   .- - -- .+##-.m-.+ ..-.-.-.  .-. m*##-
+                 |                     |           ..#-% ... .   .-..-. .+m%##*+%m.. ....    .   .m-+#+-
+                 | C-k Cut Rectangle   |           .#+%+---.  .    .     ..mm+m%-m.--.            +-+             |         ..-*-*-. ..              --*#*m-.                .++#..
+                 | C-y Paste and click |         . ***.+.                 .+-##m- .               -.+#-..
+                 |                     |          -.%#+++                   +#--                   -+*--
+                 |                     |            *.#.+..                 - . -                --++-+m
+                 |                     |            -++m-.                 .m                   .%.+%.+.
+                 |                     |             - %-m.-                                  .+-.+#%.
+                 |                     |            .+.*++--.            Heart <3 emacs      -- m*m--+..
+                 +---------------------+              .%%%.-.                              .- .m%* -+
+                                                      . ++#-. .                          . m- ###+
+                                                       ..+#m%-.                       +  -.-++#.--.
+        ____                    __  __             _     ++_%. _ __  __ _           ...+ %*m#+.--. .
+       |  _ \ ___   ___  _ __  |  \/  | __ _ _ __ ( )___ .| |%|.|..\/  | |    -   .-+  .#m-+  -.
+       | |_) / _ \ / _ \| '__| | |\/| |/ _` | '_ \|// __| |.|.|*|.|\/| | |- .   . .-mm#m....-
+       |  __/ (_) | (_) | |    | |  | | (_| | | | | \__ \ | |_|.|*|m.|-|.|___ . .-m*.*.++. ..
+       |_|   \___/ \___/|_|    |_|  |_|\__,_|_| |_| |___/  \___/|_|--|_|_____|*- ---.-  +
+           .                                                  .-  .-.#%m+%- - . ...+- +
+           .( above is done using figlet )                       .. -.*m%--+-+   .
+           .                                                        ..m.+--...
+
+
+  #+END_SRC

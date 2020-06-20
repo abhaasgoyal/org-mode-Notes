@@ -1,0 +1,71 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Sat Jun 20 23:59:38 2020
+;; Desktop file format version 208
+;; Emacs version 26.3
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (24302 21906 515042 634000) (desktop . "208") "abhaas@abhaas-ThinkPad-X1-Extreme" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font-backend xft x) (font . "-DAMA-Ubuntu Mono-normal-normal-normal-*-17-*-*-*-m-0-iso10646-1") (font-parameter . "Ubuntu Mono 13") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#eaeaea") (background-color . "#000000") (mouse-color . "black") (border-color . "#424242") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (no-focus-on-map) (no-accept-focus) (fullscreen . fullheight) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#d54e53") (sticky) (environment) (frameset--id . "FD58-4E40-1C95-B4E8") (frameset--mini t . t) (height . 56) (width . 104) (modeline . t) (unsplittable) (left . 950) (top . 19) (icon-name) (display . ":0") (explicit-name)) ((min-height . 8) (min-width . 10) (min-height-ignore . 7) (min-width-ignore . 4) (min-height-safe . 2) (min-width-safe . 2) (min-pixel-height . 144) (min-pixel-width . 90) (min-pixel-height-ignore . 126) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 36) (min-pixel-width-safe . 18)) vc (pixel-width . 960) (pixel-height . 998) (total-width . 107) (total-height . 55) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 960) (pixel-height . 494) (total-width . 107) (total-height . 27) (normal-height . 0.5) (normal-width . 1.0) (buffer "example.org" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 8151) (start . 7654))) (leaf (last . t) (pixel-width . 960) (pixel-height . 504) (total-width . 107) (total-height . 28) (normal-height . 0.5) (normal-width . 1.0) (buffer "*Org Src example.org[ artist ]*" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 658) (start . 3)))))])
+(setq comint-input-ring nil)
+(setq compile-history '("make -k " "make -k -o first"))
+(setq desktop-missing-file-warning nil)
+(setq dired-regexp-history nil)
+(setq extended-command-history nil)
+(setq face-name-history nil)
+(setq file-name-history '("/home/abhaas/orgMode/" "~/.emacs.d/elpa-26.3/helm-20200620.1555/helm-autoloads.el" "~/.emacs.d/elpa-26.3/figlet-20160218.2237/figlet-autoloads.el" "~/.emacs.d/custom.el" "/usr/share/emacs/26.3/lisp/textmodes/artist.el.gz" "/usr/share/emacs/26.3/lisp/org/org-attach.el.gz" "/home/abhaas/orgMode/example.org" "~/.emacs.d/custom.el" "~/.emacs.d/elpa-26.3/2048-game-20200417.259/2048-game-autoloads.el" "~/.emacs.d/custom.el" "~/.emacs.d/elpa-26.3/cider-20200619.928/cider-autoloads.el" "~/.emacs.d/elpa-26.3/closql-20200616.2341/closql-autoloads.el" "~/.emacs.d/elpa-26.3/company-20200616.2354/company-autoloads.el" "~/.emacs.d/elpa-26.3/counsel-20200619.1030/counsel-autoloads.el" "~/.emacs.d/elpa-26.3/dash-functional-20200617.702/dash-functional-autoloads.el" "~/.emacs.d/elpa-26.3/forge-20200616.2222/forge-autoloads.el" "~/.emacs.d/elpa-26.3/ghub-20200616.2221/ghub-autoloads.el" "~/.emacs.d/elpa-26.3/helm-20200618.1650/helm-autoloads.el" "~/.emacs.d/elpa-26.3/helm-core-20200619.1151/helm-core-autoloads.el" "~/.emacs.d/elpa-26.3/inf-ruby-20200612.1632/inf-ruby-autoloads.el" "~/.emacs.d/elpa-26.3/ivy-20200615.1103/ivy-autoloads.el" "~/.emacs.d/elpa-26.3/magit-20200617.2306/magit-autoloads.el" "~/.emacs.d/elpa-26.3/org-ref-20200615.1551/org-ref-autoloads.el" "~/.emacs.d/elpa-26.3/package-lint-20200616.2257/package-lint-autoloads.el" "~/.emacs.d/elpa-26.3/projectile-20200616.1659/projectile-autoloads.el" "~/.emacs.d/elpa-26.3/robe-20200614.150/robe-autoloads.el" "~/.emacs.d/elpa-26.3/rspec-mode-20200615.1443/rspec-mode-autoloads.el" "~/.emacs.d/elpa-26.3/rust-mode-20200618.1314/rust-mode-autoloads.el" "~/.emacs.d/elpa-26.3/slime-20200616.741/slime-autoloads.el" "~/.emacs.d/elpa-26.3/transient-20200609.910/transient-autoloads.el" "~/.emacs.d/elpa-26.3/with-editor-20200617.1234/with-editor-autoloads.el" "~/.emacs.d/custom.el" "/usr/share/emacs/26.3/lisp/progmodes/compile.el.gz" "/home/abhaas/Documents/UCSD_Algos/Course_1/week1_programming_challenges/2_maximum_pairwise_product/max_pairwise_product.cpp" "/home/abhaas/example.scm" "~/.emacs.d/custom.el" "~/.emacs.d/custom.el" "/usr/share/applications/popcorntime.desktop" "~/.emacs.d/custom.el" "/usr/share/emacs/26.3/lisp/indent.el.gz" "~/.emacs.d/custom.el" "/home/abhaas/.emacs.d/early-init.el" "~/.emacs.d/custom.el" "/home/abhaas/.emacs.d/init-local.el" "~/.emacs.d/custom.el" "~/hello" "~/.emacs.d/custom.el" "/home/abhaas/" "~/example.scm" "~/.emacs.d/custom.el" "/home/abhaas/Documents/superbolter/romeUIdev/staging/.env" "/home/abhaas/Documents/superbolter/romeUIdev/staging/.gitignore" "~/Documents/superbolter/romeUIdev/staging/package.json" "~/Documents/superbolter/romeUIdev/staging/.env" "~/Documents/superbolter/romeUIdev/RomeUI/package.json" "~/Documents/superbolter/romeUIdev/RomeUI/src/App.js" "/home/abhaas/Documents/superbolter/romeUIdev/RomeUI/.env" "~/.emacs.d/custom.el" "~/.emacs.d/elpa-26.3/rjsx-mode-20200120.1446/rjsx-mode-autoloads.el" "~/.emacs.d/custom.el" "~/Documents/superbolter/romeUIdev/RomeUI/src/App.js" "/home/abhaas/Documents/superbolter/romeUIdev/RomeUI/.projectile" "/home/abhaas/Documents/superbolter/romeUIdev/RomeUI/.gitignore" "~/Documents/superbolter/romeUIdev/RomeUI/package.json" "~/.emacs.d/custom.el" "/media/abhaas/Windows/ProgramData/Microsoft/Windows/Start Menu/Programs/Word.lnk" "~/.emacs.d/custom.el" "/home/abhaas/example.org" "~/.emacs.d/custom.el" "~/.emacs.d/elpa-26.3/org-ref-20200606.1848/org-ref.org" "~/.emacs.d/lisp/init-org.el" "~/example.org" "~/break.org" "~/.emacs.d/early-init.el" "~/gintama" "~/CourseNotes/AI_Project/Review3.pdf" "~/.emacs.d/init-local.el" "~/.emacs.d/elpa-26.3/org-ref-20200606.1848/org-ref-helm-bibtex.el" "~/orgMode/example.org" "~/break.pdf" "~/CourseNotes/AI_Project/Review3.bib" "~/.emacs.d/init.el" "~/CourseNotes/AI_Project/Review3.org" "/" "~/.emacs.d/custom.el" "~/.emacs.d/elpa-26.3/org-ref-20200606.1848/org-ref.org" "~/.emacs.d/lisp/init-org.el" "~/example.org" "~/break.org" "~/.emacs.d/early-init.el" "~/gintama" "~/CourseNotes/AI_Project/Review3.pdf" "~/.emacs.d/init-local.el" "~/.emacs.d/elpa-26.3/org-ref-20200606.1848/org-ref-helm-bibtex.el" "~/orgMode/example.org" "~/break.pdf" "~/CourseNotes/AI_Project/Review3.bib" "~/.emacs.d/init.el" "~/CourseNotes/AI_Project/Review3.org" "/media/abhaas/Windows/emu8086.io"))
+(setq grep-find-history nil)
+(setq grep-history nil)
+(setq ivy-history '("ar" "artist.el.gz" "example.org" "standard" "artist.el.gz" "TUTORIAL" "*m" "*Messages*" "Compilation" "example.scm" "^fnf" "*scheme*" "pack" "package.json" ".env" "./" "./.env" "./package.json" "app.js" "./src/App.js" "shel" "*shell*" "App.js" "./src/App.js" "Documents/superbolter/romeUIdev/RomeUI/" "./Documents/superbolter/romeUIdev/RomeUI/package.json" "ls" "revie" "/home/abhaas/CourseNotes/AI_Project/Review3.org" "Review3.bib" "example.org —£À orgMode" "Review3.org" "*Messages*" "INDIAN RUPEE SIGN" "RUPEE SIGN" "break.pdf" "*" "*Org PDF LaTeX Output*" "*Org PDF LaTeX Output*" "Review3.pdf" "re" "lo" "init-local.el" "init.el" "rev" "init-local.el" "init" "ini" "break.org" "gintama" "org-ref" "transpose-frame"))
+(setq minibuffer-history '("Hello" "Hi there" "thinng" "1" "work" "presentation" "Quit" "and" "bib" "cite:" "bi" "HierarchicalAStar"))
+(setq org-clock-history nil)
+(setq org-refile-history nil)
+(setq org-tags-history nil)
+(setq query-replace-history nil)
+(setq read-expression-history '("(setq org-latex-compiler \"xelatex\")" "(setq org-ref-insert-cite-key \"C-c ]\")" "(setq org-ref-insert-cite-key \"C-c q\")" "(setq org-ref-insert-cite-key \"C-c )\")" "(setq org-ref-insert-cite-key \"C-c )\")\n" "(org-babel-load-file \"org-ref.org\")" "(org-babel-load-file \"org-ref.org\")\n" "(setq org-latex-inputenc-alist '((\"utf8\" . \"utf8x\")))\n"))
+(setq regexp-history nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq search-ring '("figlet" "recomp" "f6" "rjsx" "org-" "org-ref" "id:" "\\cite"))
+(setq shell-command-history '("git pull" "ls"))
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/abhaas/orgMode/example.org[*Org Src example.org[ artist ]*]"
+  "*Org Src example.org[ artist ]*"
+  'picture-mode
+  '(immortal-scratch-mode auto-compile-on-load-mode projectile-mode which-key-mode hes-mode beacon-mode global-auto-revert-mode ivy-mode counsel-mode dimmer-mode artist-mode org-src-mode)
+  658
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24302 21904 150754 82000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/abhaas/orgMode/example.org"
+  "example.org"
+  'org-mode
+  '(immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode page-break-lines-mode beacon-mode global-auto-revert-mode company-mode ivy-mode counsel-mode flycheck-mode anzu-mode dimmer-mode)
+  8151
+  '(8128 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 24302 21904 150752 347000) (buffer-file-coding-system . undecided-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (8128 1355 8130 7983 7983 7983 7852 8861 8861 8150 8008))))
+
+(desktop-create-buffer 208
+  "/usr/share/emacs/26.3/lisp/org/org-attach.el.gz"
+  "org-attach.el.gz"
+  'emacs-lisp-mode
+  '(eldoc-mode immortal-scratch-mode auto-compile-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode beacon-mode global-auto-revert-mode company-mode ivy-mode counsel-mode flycheck-mode anzu-mode dimmer-mode goto-address-prog-mode bug-reference-prog-mode symbol-overlay-mode rainbow-delimiters-mode highlight-quoted-mode aggressive-indent-mode paredit-mode elisp-slime-nav-mode view-mode)
+  7855
+  '(nil nil)
+  t
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 24302 21195 915406 932000) (buffer-file-coding-system . prefer-utf-8-unix))
+  '((mark-ring nil)))
+

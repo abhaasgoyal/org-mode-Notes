@@ -1,4 +1,4 @@
-% Created 2020-05-29 Fri 23:30
+% Created 2020-06-02 Tue 00:01
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -28,11 +28,11 @@
 
 \maketitle
 \section{Top Level Headline}
-\label{sec:org4b64a0e}
+\label{sec:org6f2b443}
 \subsection{Second Level}
-\label{sec:org03c58b3}
+\label{sec:org581f9a3}
 \subsubsection{Third Level}
-\label{sec:orgeb61988}
+\label{sec:orgbf4ff21}
 some textile
 \textbf{Bold}, \emph{italic}, \texttt{verbatim} , \sout{strikethrough}
 \begin{itemize}
@@ -44,17 +44,10 @@ some textile
 \href{http://orgmode.org/}{Org-mode}
 
 \section{Tables}
-\label{sec:orgdcb7650}
+\label{sec:orgb4caf07}
 Tab is for switching between the tables
-\begin{center}
-\begin{tabular}{lll}
-\hline
-fslkf & sdkldjfs & at the start\\
-\end{tabular}
-\end{center}
-\begin{enumerate}
-\item Example
-\label{sec:org9481d18}
+\subsection{Example}
+\label{sec:org83b7804}
 \begin{center}
 \begin{tabular}{rl}
 Some & Data\\
@@ -63,10 +56,9 @@ Some & Data\\
 34 & Shut the door\\
 \end{tabular}
 \end{center}
-\end{enumerate}
 
 \section{Export to other formats}
-\label{sec:org9d2f8aa}
+\label{sec:org9581f79}
 C-c C-e
 
 \begin{verbatim}
@@ -85,7 +77,7 @@ fact(5)
 120
 \end{verbatim}
 \section{\LaTeX{} integration}
-\label{sec:org97d8ab7}
+\label{sec:orgf9f9721}
 \begin{itemize}
 \item Characters: \(\alpha\) \(\rightarrow\) \(\beta\)
 \item \(0(n \log n)\)
@@ -97,19 +89,79 @@ fact(5)
 \end{align*}
 
 \section{Literate programming}
-\label{sec:org6d38905}
+\label{sec:org9c8d895}
 
 \section{Todo stuff}
-\label{sec:org0c56449}
+\label{sec:orgeb4ce6b}
 \subsection{{\bfseries\sffamily TODO} explain todo lists}
-\label{sec:orga955a5d}
+\label{sec:org690bc4e}
 \subsubsection{{\bfseries\sffamily DONE} cycle through states}
-\label{sec:orgb839ae2}
+\label{sec:orgc0b9cbe}
 \section{Some Miscellaneous Facts}
-\label{sec:org330c812}
-org2blog can be used to blog to wordpress
+\label{sec:orgbcdb6ec}
+\subsection{org2blog can be used to blog to wordpress}
+\label{sec:orgc67b04c}
+\subsection{org-publish can help us with a website to launch}
+\label{sec:org3e18dad}
+\subsection{ox-twbs for better TOC}
+\label{sec:orge87f991}
+\subsection{You can add a source block in artist mode:}
+\label{sec:org01f6f7b}
 
-org-publish can help us with a website to launch
-
-ox-twbs for better TOC
+\begin{verbatim}
+                                                       m+--....-     .  m#####m-
+                                                       -##+--+ +-. -    *-.%.+-.
+                                                     .. +.% .- .-..  .+# +#..-.
+                                                      .m. --. mm.+.--+ +. - m
+                                                       .m. .. .m.**+m#% -.
+                                                             .-.----++--.
+                                                              . -..-#.+-.   .
+                   +------------------------------------+       .   -+- ..-...
+                   |                                    |            ..+.%+ .-+ ..+ .  -
+                   +------------------------------------+          .   . . # mm -   . ---.
+                   |                                    |             .....-.m+#m-# ---. +
+                   |                                    |               -.   .-- +m+. *.+ . .
+          -- - -.- . -                                  |                -  .  .-...m..+#%.  -.
+         +  +-+..+.|.This would be my first concept map |               ..     . m.  -.*-m%%.
+     .....++%-+mm -|+Abhaas Goyal                       |       ..    m...- .          .m-.++
+    ---m-#**.#mm#m#+-                                   |   .  .. -+.-----++...       - .-   .
+    -.*#% -.%-+.++%|                                    |  -. --. ++++-%*m*..+ .
+  .+ .+#++.. %-.- ..                                    |  .--m.-%-#+%-.m.+#--. .
+ . ++##*+-+.+  . ...                                    | .-+ m*#m .+.-.%+ .+*.-
+  m.#-             +------------------------------------+ .m+#+-m...- -. -#m-#%
+  ++##+*.                                                - .#-m%. .        -%#.--
+ ..#..-.                             -                   ++m##%.        .+- ##m .
+ .%m-+-                                                 .m m%*m+.. ..-%.. -+++-.
+.. #-.m                               - . .           . -#+###+*-..-.m.-+--m  -
+--.m*+-.                                m.%.m.         .-.#+#**m--.++- .* %. .-
+ .+-m+-+                      -  . -.-.. +m-...        .--#*###*##+#%...+. .  .
+ .. +*.-.                    . ...+%.-+##*#%+ +- -      +m-##*--+%-++ ..-.
+   .-##.-                   -. +++m%*#+----#m#m*-.. .   - m####.m--.-..  .
+   .+%##.+m.              . .- *#*----.-  ..+++m#-+ .   .++##mm.. - ...
+   ..++%*.+. .. +      .. ..-#.m. + +    ..-   +m % .    .-m*-.+.
+     .-.m#m-+.%--  +  + -.+--... -.        ..-.-mm%..-   -m+*#%+.          .
+      .+..*##-%%-+--+-% %##-+ - ..             ..m.%-.   ..m+##..        - .--..
+        .. #+#*+#++ #*##.m--. .                 -mm#-.    . .-+-        - +++ -.-. .
+         +...+- %**#+-+  .- . .              . m  -*- .     - -- .      ..+##. m  -  ..
+           .+ .-.--..-+- .                 -....--++.-     .           . +--m%++ .--+.-
+             .-m.. .  .                 . ..  -+ m- -      ......     .  +..*+mmm*%#.m-+ .
+                   .                   ... ...#+-.  .  .   -..++ -.       -.*-+++ --**-.... .
+                                    ...... +m.- -..-   .* m .++.-- +     .-.+m#m.m-#-m.m+ +.
+                                .   +--. -.. +. ..   --.-. #mm##*+---    . . -*--. *..-mm#%*+ -
+                      .  - .  -.  . -  -+ -.. .      .-.%-*#-. . %# +-     . -.-#%+m..- .%.%m.-.
+                    + .....  . ...-m+m+-  -  .       -m#*-%+ .. -m#-+        . -%+.-    .m+-+.+
+                 -.-.- ..+-m.m-*%+ . m-+            +% #m-.. ....#*.         - +#-++.    . -.
+                .  --%%-#-%*.+%.. .                 +##+**++   -.*%-..          #%-.
+                . +**%#.- -m%+m. .                 +%+###--   . -m%-          .+m#%. .
+                .m+.*m-#+-+-+++.-                    ###%#%m.mm+#+%m.-        . #m#..
+                  ..  +-%##-*+#+                   ..%+####+-#- *+m+m-.+.    . --%-m .
+                  . . .. - mm+--                    .+m#%mm-+m.m*#%-++.++     . .-##+
+                        . -.-  -                    -.###-#-  -+ . ..*#m. .    ..%-#.
+                        .  .                        +%m##*-.-.---. --.*m#-.     --++-.
+                                                    . %-#*-.+  . .  + ++.-       .-..
+                                                      --*# .      . .... .        .-.
+                                                     ..  m.           . -           -
+                                                      ...+.
+                                                       ..
+\end{verbatim}
 \end{document}

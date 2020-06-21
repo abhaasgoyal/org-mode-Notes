@@ -1,9 +1,10 @@
-# # Default title is example ( it's a metadata kinda thing)
+ # Default title is example ( it's a metadata kinda thing) #OPTIONS : toc:nil for no table of contents @pdf file
 #+TITLE: A Gentle Introduction to Org-Mode
 
 # # Don't show table of contents and stuff
-#+OPTIONS: toc:nil
 #+DESCRIPTION: Testing the features from
+#+SETUPFILE: ~/orgMode/org-html-themes/setup/theme-readtheorg-local.setup
+#+PROPERTY: header-args    :exports both :results scalar
 
 # Top level headlines are in numbers most of the rest is in bullet
 # Outliers ( they are basically links to open up stuff)
@@ -158,6 +159,18 @@
    Do org-ref-helm-insert-cite-link to initialize org-ref keybindings \\
    Idk the solution to that but C-c ] should work afterwards \\
    It has got to do with Steve Purcell config I think
+** Gui Frames can be used for pretty printing within org mode
+** For scripting languages :results output should be there as the header argument for printing every line
+   #+BEGIN_SRC python :results output
+   print "Hello"
+   2
+   print "bye"
+   #+END_SRC
+
+   #+RESULTS:
+   : Hello
+   : bye
+
 * Artist Mode
   # C-c C-a is the shortcut
   # Middle clicking inside the block gives us options
@@ -204,3 +217,5 @@
 
 
   #+END_SRC
+* Consistent Technical Documents
+  [[file:consistentDoc.org][Documentation]]

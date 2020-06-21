@@ -1,0 +1,52 @@
+% Created 2020-06-21 Sun 20:06
+% Intended LaTeX compiler: xelatex
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Abhaas Goyal}
+\date{\today}
+\title{Git from the Ground Up}
+\hypersetup{
+ pdfauthor={Abhaas Goyal},
+ pdftitle={Git from the Ground Up},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.3 (Org mode 9.1.9)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{Introduction}
+\label{sec:org0fe7799}
+We're going to learn a little something about the git data model by crafting the \texttt{.git} directory and  blob objects by hand. It'll be fun! Also exporting beautiful org files into \href{https://github.com/fniessen/org-html-themes}{Awesome HTML} ( Cloned and used in \texttt{\#+SETUPFILE})
+
+\section{Heading 1}
+\label{sec:org9dc6a58}
+bold
+\section{Heading 2}
+\label{sec:org807bc0d}
+\emph{italics}
+\section{Heading 3}
+\label{sec:org144f4b3}
+\texttt{monospace}
+
+\section{Where are we, and is git happy?}
+\label{sec:orgf78f9d8}
+Let's start by seeing where we are, and if we're in a valid git repository.
+
+\begin{verbatim}
+echo "My current working dir is: $(dirs +0)"
+ls -l
+\end{verbatim}
+\end{document}

@@ -1,0 +1,48 @@
+#+TITLE: Git from the Ground Up
+#+SETUPFILE: ~/orgMode/org-html-themes/setup/theme-readtheorg-local.setup
+#+PROPERTY: header-args    :exports both :results scalar
+#+INCLUDE: code.inc
+#+CALL: init()
+
+
+* Introduction
+  - We're going to learn a little something about the git data model by crafting the =.git= directory and  blob objects by hand. It'll be fun! Also exporting beautiful org files into [[https://github.com/fniessen/org-html-themes][Awesome HTML]] ( Cloned and used in ~#+SETUPFILE~)
+  - Global property args are put in ~#+PROPERTY~
+  - Wherever you want the css properties in local copy the styles folder to the documentation workspace
+
+* Where are we, and is git happy?
+  Let's start by seeing where we are, and if we're in a valid git repository. /(Header argument exports has been set to both for displaying results)/
+  # PARTICULAR PROPERTY ARG
+  #+BEGIN_SRC shell :dir ~/orgMode/.git
+  echo "My current working dir is: $(dirs +0)"
+  #+END_SRC
+
+  #+RESULTS:
+  : My current working dir is: ~/orgMode/.git
+  #+BEGIN_SRC shell
+  ls -l
+  #+END_SRC
+
+  #+RESULTS:
+  | total      | 200 |        |        |       |     |    |       |                    |
+  | -rw-rw-r-- |   1 | abhaas | abhaas |    90 | Jun | 21 | 20:35 | code.inc           |
+  | -rw-rw-r-- |   1 | abhaas | abhaas | 12285 | Jun | 21 | 21:19 | consistentDoc.html |
+  | -rw-rw-r-- |   1 | abhaas | abhaas |  1976 | Jun | 21 | 21:19 | consistentDoc.org  |
+  | -rw-rw-r-- |   1 | abhaas | abhaas | 27870 | Jun | 21 | 20:06 | consistentDoc.pdf  |
+  | -rw-rw-r-- |   1 | abhaas | abhaas |  1378 | Jun | 21 | 20:06 | consistentDoc.tex  |
+  | -rw-rw-r-- |   1 | abhaas | abhaas | 24009 | Jun | 21 | 00:33 | example.html       |
+  | -rw-r--r-- |   1 | abhaas | abhaas | 11782 | Jun | 21 | 19:25 | example.org        |
+  | -rw-rw-r-- |   1 | abhaas | abhaas | 97024 | Jun |  2 | 00:01 | example.pdf        |
+  | -rw-rw-r-- |   1 | abhaas | abhaas |  6943 | Jun |  2 | 00:01 | example.tex        |
+  | drwxrwxr-x |   6 | abhaas | abhaas |  4096 | Jun | 21 | 19:36 | org-html-themes    |
+  | -rw-rw-r-- |   1 | abhaas | abhaas |   332 | May | 30 | 17:44 | README.org         |
+
+* Let's create the .git directory
+
+  #+BEGIN_SRC shell :results scalar exports:none
+  echo "ref: refs/heads/master" > .git/HEAD
+  tree .git
+  git status 2>&1 && echo Git is happy!
+  #+END_SRC
+
+  *In this we can see that #NAME can be used to access the function in the future (like in the #+CALL: init () )*

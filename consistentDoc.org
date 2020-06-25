@@ -24,18 +24,20 @@
   #+END_SRC
 
   #+RESULTS:
-  | total      | 200 |        |        |       |     |    |       |                    |
-  | -rw-rw-r-- |   1 | abhaas | abhaas |    90 | Jun | 21 | 20:35 | code.inc           |
-  | -rw-rw-r-- |   1 | abhaas | abhaas | 12285 | Jun | 21 | 21:19 | consistentDoc.html |
-  | -rw-rw-r-- |   1 | abhaas | abhaas |  1976 | Jun | 21 | 21:19 | consistentDoc.org  |
-  | -rw-rw-r-- |   1 | abhaas | abhaas | 27870 | Jun | 21 | 20:06 | consistentDoc.pdf  |
-  | -rw-rw-r-- |   1 | abhaas | abhaas |  1378 | Jun | 21 | 20:06 | consistentDoc.tex  |
-  | -rw-rw-r-- |   1 | abhaas | abhaas | 24009 | Jun | 21 | 00:33 | example.html       |
-  | -rw-r--r-- |   1 | abhaas | abhaas | 11782 | Jun | 21 | 19:25 | example.org        |
-  | -rw-rw-r-- |   1 | abhaas | abhaas | 97024 | Jun |  2 | 00:01 | example.pdf        |
-  | -rw-rw-r-- |   1 | abhaas | abhaas |  6943 | Jun |  2 | 00:01 | example.tex        |
-  | drwxrwxr-x |   6 | abhaas | abhaas |  4096 | Jun | 21 | 19:36 | org-html-themes    |
-  | -rw-rw-r-- |   1 | abhaas | abhaas |   332 | May | 30 | 17:44 | README.org         |
+  #+begin_example
+  total 152
+  -rw-rw-r-- 1 abhaas abhaas    90 Jun 21 20:35 code.inc
+  -rw-rw-r-- 1 abhaas abhaas 12665 Jun 21 21:52 consistentDoc.html
+  -rw-rw-r-- 1 abhaas abhaas  2451 Jun 21 22:10 consistentDoc.org
+  -rw-rw-r-- 1 abhaas abhaas  1378 Jun 21 20:06 consistentDoc.tex
+  -rw-rw-r-- 1 abhaas abhaas 27241 Jun 24 19:42 example.html
+  -rw-r--r-- 1 abhaas abhaas 13128 Jun 24 19:45 example.org
+  -rw-rw-r-- 1 abhaas abhaas 56711 Jun 24 19:44 example.pdf
+  -rw-rw-r-- 1 abhaas abhaas 11754 Jun 24 19:44 example.tex
+  drwxrwxr-x 5 abhaas abhaas  4096 Jun 21 22:07 org-html-themes
+  -rw-rw-r-- 1 abhaas abhaas   332 May 30 17:44 README.org
+  drwxrwxr-x 5 abhaas abhaas  4096 Jun 21 19:36 styles
+  #+end_example
 
 * Let's create the .git directory
 

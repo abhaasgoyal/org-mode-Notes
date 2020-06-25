@@ -1,8 +1,6 @@
-% Created 2020-06-02 Tue 00:01
-% Intended LaTeX compiler: pdflatex
+% Created 2020-06-24 Wed 20:05
+% Intended LaTeX compiler: xelatex
 \documentclass[11pt]{article}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{grffile}
 \usepackage{longtable}
@@ -27,12 +25,14 @@
 \begin{document}
 
 \maketitle
+\tableofcontents
+
 \section{Top Level Headline}
-\label{sec:org6f2b443}
+\label{sec:orge15bc88}
 \subsection{Second Level}
-\label{sec:org581f9a3}
+\label{sec:org3c2ff12}
 \subsubsection{Third Level}
-\label{sec:orgbf4ff21}
+\label{sec:org43baba8}
 some textile
 \textbf{Bold}, \emph{italic}, \texttt{verbatim} , \sout{strikethrough}
 \begin{itemize}
@@ -41,13 +41,17 @@ some textile
 \item items
 \end{itemize}
 
+\textbf{Links}
+
 \href{http://orgmode.org/}{Org-mode}
 
+\href{consistentDoc.org}{Introduction}
+
 \section{Tables}
-\label{sec:orgb4caf07}
+\label{sec:org1b53c33}
 Tab is for switching between the tables
 \subsection{Example}
-\label{sec:org83b7804}
+\label{sec:org709ad02}
 \begin{center}
 \begin{tabular}{rl}
 Some & Data\\
@@ -57,8 +61,37 @@ Some & Data\\
 \end{tabular}
 \end{center}
 
+\section{Blocks}
+\label{sec:org5e7901a}
+There are 5 types of blocks in org-mode:
+\begin{enumerate}
+\item For centering text -
+\begin{center}
+Hey, this text is in the center of a document ( There are some pitfalls for this in exporting to latex though)
+\end{center}
+\item For Literal examples -
+\begin{verbatim}
+( note that for simplicity when using small examples use : in front of line )
+\end{verbatim}
+\item For quotations -
+\begin{quote}
+The supreme art of war is to subdue the enemy without fighting ---Sun Tzu
+\end{quote}
+\item For source code -
+\begin{verbatim}
+void main() {
+std::cout<<"Hello World";
+return 0;
+}
+\end{verbatim}
+\item For verses-
+\begin{verse}
+The sky seems so blue\\
+They lead me to you\\
+\end{verse}
+\end{enumerate}
 \section{Export to other formats}
-\label{sec:org9581f79}
+\label{sec:org0b438e9}
 C-c C-e
 
 \begin{verbatim}
@@ -76,8 +109,12 @@ fact(5)
 \begin{verbatim}
 120
 \end{verbatim}
+
+\begin{verbatim}
+120
+\end{verbatim}
 \section{\LaTeX{} integration}
-\label{sec:orgf9f9721}
+\label{sec:org9185a78}
 \begin{itemize}
 \item Characters: \(\alpha\) \(\rightarrow\) \(\beta\)
 \item \(0(n \log n)\)
@@ -89,24 +126,24 @@ fact(5)
 \end{align*}
 
 \section{Literate programming}
-\label{sec:org9c8d895}
+\label{sec:org6bb9819}
 
 \section{Todo stuff}
-\label{sec:orgeb4ce6b}
+\label{sec:orgb9ce359}
 \subsection{{\bfseries\sffamily TODO} explain todo lists}
-\label{sec:org690bc4e}
-\subsubsection{{\bfseries\sffamily DONE} cycle through states}
-\label{sec:orgc0b9cbe}
+\label{sec:orgd925586}
+\subsection{{\bfseries\sffamily DONE} cycle through states}
+\label{sec:orgcb95fc3}
+\subsection{{\bfseries\sffamily PROJECT} Halo}
+\label{sec:org36fdf31}
 \section{Some Miscellaneous Facts}
-\label{sec:orgbcdb6ec}
-\subsection{org2blog can be used to blog to wordpress}
-\label{sec:orgc67b04c}
-\subsection{org-publish can help us with a website to launch}
-\label{sec:org3e18dad}
-\subsection{ox-twbs for better TOC}
-\label{sec:orge87f991}
-\subsection{You can add a source block in artist mode:}
-\label{sec:org01f6f7b}
+\label{sec:org90bd3d0}
+\begin{itemize}
+\item org2blog can be used to blog to wordpress
+
+org-publish can help us with a website to launch
+\item ox-twbs for better TOC
+\item You can add a source block in artist mode:
 
 \begin{verbatim}
                                                        m+--....-     .  m#####m-
@@ -164,4 +201,80 @@ fact(5)
                                                       ...+.
                                                        ..
 \end{verbatim}
+\item Whenever you are starting into org ref$\backslash$
+
+Do org-ref-helm-insert-cite-link to initialize org-ref keybindings \\
+Idk the solution to that but \texttt{C-c ]} should work afterwards \\
+\begin{verbatim}
+It has got to do with Steve Purcell config I thing
+\end{verbatim}
+\item For scripting languages :results output should be there as the header argument for printing every line
+\begin{verbatim}
+print "Hello"
+2
+print "bye"
+\end{verbatim}
+
+\begin{verbatim}
+Hello
+bye
+\end{verbatim}
+
+\item You can use macros for changing font size and color in a html document (Note that this won't work with \LaTeX{} or other exports
+\begin{verbatim}
+#+MACRO: color @@html:<font color="$1">$2</font>@@
+#+MACRO: size @@html:<font size="$1">$2</font>@@
+\end{verbatim}
+
+This is a sample sentence in normal text color.\\
+
+This is a sample sented in normal font size \\
+\end{itemize}
+\section{Artist Mode}
+\label{sec:org0262dfe}
+\href{https://www.youtube.com/watch?v=cIuX87Xo8Fc}{Artist Mode Tutorial}
+\begin{verbatim}
+
+                                        +-----------------------+
+                                        |    Title of a topic   |
+                                        +----------+------------+
+  +--------------------------+                     |
+  | Thing                    |                     +----------------|
+  +--------------------------+                                      v
+  | + Stuff                  |                          +-----------------------+
+  |                          |                          | Right click to select |
+  +--------------------------+                          | and drag it around to |
+  | + Properties             |                          | erase uk              |
+  |                          +--------------------------+                       |
+  +--------------------------+                          |Shift ., changes endsto|        - . . ..
+                                                        |Its counterparts       |         -. -m..
+                                                        +-----------------------+        m ++.m-. .
+                                                    .                 .   .. ....        -  ##m%-.-
+                                                 .m .++ . m* .*++-#### --+-+. +m+#...- -. +.m-%m#+.-
+.            +---------------------+          . m.  #mm..-   .- - -- .+##-.m-.+ ..-.-.-.  .-. m*##-
+             |                     |           ..#-% ... .   .-..-. .+m%##*+%m.. ....    .   .m-+#+-
+             | C-k Cut Rectangle   |           .#+%+---.  .    .     ..mm+m%-m.--.            +-+             |         ..-*-*-. ..              --*#*m-.                .++#..
+             | C-y Paste and click |         . ***.+.                 .+-##m- .               -.+#-..
+             |                     |          -.%#+++                   +#--                   -+*--
+             |                     |            *.#.+..                 - . -                --++-+m
+             |                     |            -++m-.                 .m                   .%.+%.+.
+             |                     |             - %-m.-                                  .+-.+#%.
+             |                     |            .+.*++--.            Heart <3 emacs      -- m*m--+..
+             +---------------------+              .%%%.-.                              .- .m%* -+
+                                                  . ++#-. .                          . m- ###+
+                                                   ..+#m%-.                       +  -.-++#.--.
+    ____                    __  __             _     ++_%. _ __  __ _           ...+ %*m#+.--. .
+   |  _ \ ___   ___  _ __  |  \/  | __ _ _ __ ( )___ .| |%|.|..\/  | |    -   .-+  .#m-+  -.
+   | |_) / _ \ / _ \| '__| | |\/| |/ _` | '_ \|// __| |.|.|*|.|\/| | |- .   . .-mm#m....-
+   |  __/ (_) | (_) | |    | |  | | (_| | | | | \__ \ | |_|.|*|m.|-|.|___ . .-m*.*.++. ..
+   |_|   \___/ \___/|_|    |_|  |_|\__,_|_| |_| |___/  \___/|_|--|_|_____|*- ---.-  +
+       .                                                  .-  .-.#%m+%- - . ...+- +
+       .( above is done using figlet )                       .. -.*m%--+-+   .
+       .                                                        ..m.+--...
+
+
+\end{verbatim}
+\section{Consistent Technical Documents}
+\label{sec:org5137df8}
+\href{consistentDoc.org}{Documentation}
 \end{document}

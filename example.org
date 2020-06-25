@@ -6,6 +6,10 @@
 #+SETUPFILE: ~/orgMode/org-html-themes/setup/theme-readtheorg-local.setup
 #+PROPERTY: header-args    :exports both :results scalar
 
+#+MACRO: color @@html:<font color="$1">$2</font>@@
+#+MACRO: sizef @@html:<font style="font-size: $1px">$2</font>@@
+
+
 # Top level headlines are in numbers most of the rest is in bullet
 # Outliers ( they are basically links to open up stuff)
 * Top Level Headline
@@ -17,23 +21,51 @@
 - list
 - items
 
+*Links*
 # C-c C-l to insert a link
 [[http://orgmode.org/][Org-mode]]
 # If you want to do this for other files then it's easier to do so by
-# C-c l to insert a link there and linking this to ther other file
-
+# C-c l to store a link to a file/even an outline to some other file in emacs and linking this to ther original file (shown below) through C-c C-l
+[[file:consistentDoc.org::*Introduction][Introduction]]
 # ***** M - <Enter> to add a new point directly without anything
 
 * Tables
   Tab is for switching between the tables
   # |- Tab is for completing the line
   # | fslkf  | sdkldjfs | at the start
+  # reorder rows and colums using M-<arrow keys>
 ** Example
 | Some | Data           |
 |------+----------------|
 |   12 | buckle my shoe |
 |   34 | Shut the door  |
 
+* Blocks
+  There are 5 types of blocks in org-mode:
+  1. For centering text -
+     #+BEGIN_CENTER
+     Hey, this text is in the center of a document ( There are some pitfalls for this in exporting to latex though)
+     #+END_CENTER
+  2. For Literal examples -
+     #+BEGIN_EXAMPLE
+     ( note that for simplicity when using small examples use : in front of line )
+     #+END_EXAMPLE
+  3. For quotations -
+     #+BEGIN_QUOTE
+     The supreme art of war is to subdue the enemy without fighting ---Sun Tzu
+     #+END_QUOTE
+  4. For source code -
+     #+BEGIN_SRC C++
+     void main() {
+     std::cout<<"Hello World";
+     return 0;
+     }
+     #+END_SRC
+  5. For verses-
+     #+BEGIN_VERSE
+     The sky seems so blue
+     They lead me to you
+     #+END_VERSE
 * Export to other formats
   C-c C-e
 
@@ -67,7 +99,7 @@
 
 * Literate programming
 
-# Evaluate all files in the source block not only the snippet
+# Evaluate all files in the source block not only the snippet while loading org in babel mode
 
 * Todo stuff
 # C-c C-t on any line below will help us decide the state of the task ( Either it has been completed, waiting, etc)
@@ -91,13 +123,13 @@
 # Org capture templates
 # abook - UNIX program for contacts
 * Some Miscellaneous Facts
-** org2blog can be used to blog to wordpress
+- org2blog can be used to blog to wordpress
   # =org2blog=
-** org-publish can help us with a website to launch
+ org-publish can help us with a website to launch
   # =org-publish=
-** ox-twbs for better TOC
+- ox-twbs for better TOC
   # =ox-twbs=
-** You can add a source block in artist mode:
+- You can add a source block in artist mode:
 
   #+begin_src artist
                                                                  m+--....-     .  m#####m-
@@ -155,12 +187,14 @@
                                                                 ...+.
                                                                  ..
   #+end_src
-** Whenever you are starting into org ref
+- Whenever you are starting into org ref\
+
    Do org-ref-helm-insert-cite-link to initialize org-ref keybindings \\
-   Idk the solution to that but C-c ] should work afterwards \\
-   It has got to do with Steve Purcell config I think
-** Gui Frames can be used for pretty printing within org mode
-** For scripting languages :results output should be there as the header argument for printing every line
+   Idk the solution to that but ~C-c ]~ should work afterwards \\
+   #+BEGIN_EXAMPLE
+   It has got to do with Steve Purcell config I thing
+   #+END_EXAMPLE
+- For scripting languages :results output should be there as the header argument for printing every line
    #+BEGIN_SRC python :results output
    print "Hello"
    2
@@ -171,6 +205,19 @@
    : Hello
    : bye
 
+- *You can use macros for changing font size and color in a html document (Note that this won't work with LaTeX or other exports*
+  #+BEGIN_SRC
+  #+MACRO: color @@html:<font color="$1">$2</font>@@
+  #+MACRO: size @@html:<font size="$1">$2</font>@@
+  #+END_SRC
+
+  This is a sample sentence in normal text color.\\
+  {{{color(red,This is a sample sentence in red text color.)}}}
+
+  This is a sample sented in normal font size \\
+  {{{sizef(25, This is a font size of 25px)}}}
+
+  [[https://github.com/fniessen/org-macros][Org Macros Sample Collection]] has been used in the configuration for the setup file
 * Artist Mode
   # C-c C-a is the shortcut
   # Middle clicking inside the block gives us options

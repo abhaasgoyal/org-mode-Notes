@@ -82,6 +82,10 @@ If with item description is needed -
 #     - and much more!
 #     #+end_sidebar
 
+* Tags
+  1. Inserted by ~C-c C-q~ or ~C-c C-c~
+  2. TAGS for a file using ~TAGS:~
+  3. TAGS do tag inheritance
 * Export to other formats
   C-c C-e
 

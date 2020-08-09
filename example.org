@@ -289,5 +289,18 @@ If with item description is needed -
 
 
   #+END_SRC
-* Consistent Technical Documents
+* Github integration
   [[file:consistentDoc.org][Documentation]]
+* AuCTex
+  - IDE for LaTeX
+  - Don't forget to enable RefTEX
+  - Latex Users will find =preview-latex= very attractive
+** Basic editing
+   - ~C-c C-s~ for subsection/paragraphs/etc
+   - ~C-c C-e~ for inserting environment
+   - ~C-c C-m~ for inserting macros
+   - ~C-c C-f C-[b/i/e/s/r/f/t/c/d]~ for inserting fonts
+   - ~C-c C-c~ for output ~C-c C-a~ probably will detect latex in my case. ~C-c C-r~ for a specific region
+   - ~C-c ~~ for debugger
+** Indentation
+   - ~M-x LaTex-fill-buffer~ for indenting buffer ~M-q~ for paragraph

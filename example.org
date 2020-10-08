@@ -243,6 +243,8 @@ If with item description is needed -
   {{{sizef(25, This is a font size of 25px)}}}
 
   [[https://github.com/fniessen/org-macros][Org Macros Sample Collection]] has been used in the configuration for the setup file
+
+- ~M-x set-input-method~ can be used to type more than one language and ~C-\~ to return to default
 * Artist Mode
   # C-c C-a is the shortcut
   # Middle clicking inside the block gives us options
@@ -304,3 +306,17 @@ If with item description is needed -
    - ~C-c ~~ for debugger
 ** Indentation
    - ~M-x LaTex-fill-buffer~ for indenting buffer ~M-q~ for paragraph
+* Reveal Mode
+  - Use with chalkboard for annotation stuff
+    #+BEGIN_SRC org
+    #+OPTIONS: toc:nil num:nil
+    #+REVEAL_INIT_OPTIONS: plugins: [RevealChalkboard]
+    #+BEGIN_EXPORT html
+    <script src="plugin.js"> </script>
+    #+END_EXPORT
+    #+END_SRC
+  - Default settings
+    #+BEGIN_SRC elisp
+    (setq org-reveal-root "https://cdn.jsdelivr.net/npm/reveal.js")
+    (setq org-reveal-mathjax t)
+    #+END_SRC

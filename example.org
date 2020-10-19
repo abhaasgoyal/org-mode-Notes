@@ -320,3 +320,6 @@ If with item description is needed -
     (setq org-reveal-root "https://cdn.jsdelivr.net/npm/reveal.js")
     (setq org-reveal-mathjax t)
     #+END_SRC
+* Go mode
+  - https://github.com/grafov/go-playground
+  - Integration with lsp, goimports, gofmt

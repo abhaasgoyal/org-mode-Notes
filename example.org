@@ -291,6 +291,10 @@ If with item description is needed -
 
 
   #+END_SRC
+* Window Configuration
+  1. Transposing Windows - ~C-x | or C-x _~
+  2. A new window and then come back - ~<f7>~
+  3.
 * Github integration
   [[file:consistentDoc.org][Documentation]]
 * AuCTex
@@ -323,3 +327,33 @@ If with item description is needed -
 * Go mode
   - https://github.com/grafov/go-playground
   - Integration with lsp, goimports, gofmt
+* Haskell Mode
+  - Format imports = C-c C-,
+  - Function Type/Information C-C C-i / C-t
+  - Switch ghci and loaded file C-c C-z
+  - Haskell interative mode clear C-c C-k
+  - Load GHCI C-c C-l
+  - Cabal build C-c C-c
+* Smerge Mode
+  - *Prefix* C-c ^
+  - p = previous conflict
+  - n = next conflict
+  - <RET> = keep the version of the cursor pointer
+  - m/u = keep my version
+  - o/l = keep other version
+  - a = keep all
+  - r = resolve
+  - E = ediff lmaoo
+  - C = combine with next
+* Dired
+  - C-x C-j (from current file)
+  - 0 w (copy currrent filename to clipboard)
+
+* HTML Mode
+  - Use emmet mode to expand
+  - ~C-c C-t~ to put tags interactively
+
+* Markdown Mode
+  - ~C-c C-c g~ Github view mode
+* Length ruler
+  - ~init-editing-utils.el~ = display fill column indicator
